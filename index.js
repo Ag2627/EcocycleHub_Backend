@@ -30,10 +30,7 @@ app.use( cors({
     ],
     credentials: true,
   })); //iske andar ye likhna optional h likh kar bas site secure banti h or nahi likhne par kisi par bhi chal jaati h
-app.use(cors({
-  origin: true, // or origin: '*', but not with credentials: true
-  credentials: true
-}));
+
 app.use('/auth',Authrouter);
 // Routes
 app.get("/", (req, res) => {
