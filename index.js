@@ -19,7 +19,7 @@ app.use(express.json({ limit: '25mb' }));
 app.use(express.urlencoded({ extended: true, limit: '25mb' }));
 
 app.use( cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174','https://resplendent-taiyaki-c9400a.netlify.app/'],
+    origin: ['http://localhost:5173', 'http://localhost:5174','https://resplendent-taiyaki-c9400a.netlify.app'],
     methods: ["GET", "POST", "DELETE", "PUT","PATCH"],
     allowedHeaders: [
       "Content-Type",
